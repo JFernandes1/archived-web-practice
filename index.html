@@ -1,24 +1,44 @@
 <html> 
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <title> Jyo </title>
     </head>
 
     <body>
-        <h1> Jyo </h1>
+        <!-- nav -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content" id = "overlay-nav">
+                        <a href="#"><img src="styles/about-nav.png" class = "links"></a>
+                        <br>
+                        <a href="#"><img src="styles/work-nav.png" class = "links"></a>
+                </div>
+              </div>
+              <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
 
-        <h2>test page</h2>
+        
+        <section>
+            <div class="bg"></div>
+        </section>
+        <!-- home page 
+            <br>
+            <div>
+            <img src = "styles/about_2.png" id = "about"/>
+           
+                <img src = "styles/headshot.png" id = "headshot"/>
+                <p id = "about-para">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <img src = "styles/pencil.png" id = "pencil">
+        </div>
 
-        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised 
-            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus PageMaker 
-            including versions of Lorem Ipsum.</p>
+        <br>
+        
+        <img src = "styles/projects.png" id = "projects"/>
 
-        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src= "scripts.js"></script>
     </body>
 </html>

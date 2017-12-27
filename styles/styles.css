@@ -1,0 +1,80 @@
+
+
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("homepage.svg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+
+ #nav {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right:0;
+  top:0;
+  z-index: 10;
+}
+
+#about{
+  margin-left: 30%;
+  height: 73%;
+}
+
+#headshot{
+  position: absolute;
+  top: 130%;
+  left: 32.5%;
+}
+
+#pencil{
+  height: 14%;
+}
+
+#about-para{
+  left: 15%;
+  top: 130%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(252,251,192);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.links{
+  height: 10%; 
+  padding:10px; 
+}
+
+.overlay-content{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
