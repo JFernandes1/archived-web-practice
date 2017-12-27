@@ -18,6 +18,11 @@ $(document).ready(function(){
     $("p").click(function(){
         $(this).hide();
     })
+    $(".links").eq(0).on("click", function(){
+        $("section").empty();
+        $(".overlay").css('display', 'none');
+        $("section").load("about.html");
+    })
     
     $(".links").eq(1).on("click", function(){
         $("section").empty();
@@ -27,6 +32,7 @@ $(document).ready(function(){
     //menu
     $(".links").eq(2).on("click", function(){
         $("section").empty();
+        $(".overlay").css('display', 'none');
          $("section").load("projects.html");
        })
 });
