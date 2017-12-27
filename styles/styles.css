@@ -129,3 +129,22 @@
 #cake-icon{
   width: 90%; 
 }
+
+/*FONTS
+
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Bevan', cursive;
+font-family: 'Coustard', serif; */
+
+h3{
+  font-family: 'Bungee', cursive;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+p{
+  font-family: 'Coustard', serif;
+  font-size: 1.1em;
+  margin-top: 0;
+}
