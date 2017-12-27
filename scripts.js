@@ -14,24 +14,114 @@ function closeNav() {
 
 
 $(document).ready(function(){
+    
 
     $("p").click(function(){
         $(this).hide();
     })
-    $(".links").eq(0).on("click", function(){
+    $("#home-btn").click(function(){
         $("section").empty();
         $(".overlay").css('display', 'none');
+        $("#nav").css('display', 'inline');
+    })
+
+    $(".links").eq(0).click(function(){
+        $("section").empty();
+        alert( "Load was performed." );
+        $(".overlay").css('display', 'none');
+        $("#nav").css('display', 'inline');
     })
     
-    $(".links").eq(1).on("click", function(){
+    $(".links").eq(1).click(function(){
         $("section").empty();
         $(".overlay").css('display', 'none');
         $("section").load("about.html");
+        $("#nav").css('display', 'inline');
     })
     //menu
-    $(".links").eq(2).on("click", function(){
+    $(".links").eq(2).click(function(){
         $("section").empty();
         $(".overlay").css('display', 'none');
          $("section").load("projects.html");
+         $("#nav").css('display', 'inline');
        })
+/*
+       var wHeight = $(window).innerHeight();
+       var siblings = $('.slide').siblings();
+       var perset = {};
+       var sumHeight = 0;
+       for(var i = 0; i<siblings.length; i++) {
+         if(siblings[i].dataset.background){
+           perset[sumHeight] =  siblings[i].dataset.background;
+         }
+         else
+           perset[sumHeight] =  0;
+     
+         sumHeight= sumHeight + siblings[i].clientHeight;
+       }
+       processScroll();
+     
+       function lessThan(nums, key){
+         if(nums == null || nums.length == 0 || key ==0 ) 
+           return 0;
+         low = 0;
+         high = nums.length -1;
+         while(low <= high){
+             mid = parseInt((low + high) >> 1);
+             if(key <= nums[mid]){
+                 high = mid - 1;
+             }else {
+                 low = mid +1;
+             }
+         }
+         return high;
+       }
+     
+       var scroll_pos = 0;
+     
+       function processScroll() { 
+         scroll_pos = $(this).scrollTop();
+     
+         var presetHeights = Object.keys(perset);
+         var x = lessThan(presetHeights,scroll_pos);
+         var bgColor = perset[presetHeights[x]];
+         if(bgColor) {
+           $("body").css({'background-color': bgColor,
+                        'transition' : '0.3s all'});
+
+         }
+       }
+     
+       $(document).scroll(processScroll); */
+
+       $(window).scroll(function() {
+
+        // calculate the percentage the user has scrolled down the page
+        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+        if(scrollPercent > 0){
+            $("body").addClass("changeColor")
+       }
+       if (scrollPercent < 10) {
+          $("body").removeClass("changeColor")
+       }
+
+        });
+
 });
+
+/*
+$(function() {
+    const div1 = $(".wrapper");
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > div1.height()) {
+          $("body").addClass("changeColor")
+       }
+       if ($(this).scrollTop() < div1.height()) {
+          $("body").removeClass("changeColor")
+       }
+    });
+ });*/
+
+
+ 
+

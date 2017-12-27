@@ -5,6 +5,16 @@
     margin: 0;
 }
 
+body {
+  background: white;
+  transition: 0.3s all;
+}
+
+.changeColor {
+  background:#C65406;
+  transition: 0.5s all;
+}
+
 .bg {
   /* The image used */
   background-image: url("homepage.svg");
@@ -16,7 +26,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 5;
+  z-index: 5; 
+}
+
+.two{
+  height:1000px;
+  
+  font-size:36px;
 }
 
 #home-btn{
@@ -50,7 +66,7 @@
 
 #headshot{
   position: absolute;
-  top: 130%;
+  top: 27%;
   left: 32.5%;
 }
 
@@ -147,4 +163,20 @@ p{
   font-family: 'Coustard', serif;
   font-size: 1.1em;
   margin-top: 0;
+}
+
+.slide1{
+  height: 100%;
+}
+
+.slide2{
+  height: 100%;
+}
+
+.slide3{
+  height: 100%;
+}
+
+.slide4{
+	height: 100%;
 }
