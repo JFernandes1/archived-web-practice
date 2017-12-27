@@ -19,13 +19,28 @@
   z-index: 5;
 }
 
- #nav {
+#home-btn{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left:20px;
+  top:20px;
+}
+
+ #nav, .closebtn {
   width: 100px;
   height: 100px;
   position: absolute;
   right:0;
   top:0;
   z-index: 10;
+}
+
+.closebtn{
+  width: 60px;
+  height: 60px;
+  right: 15px;
+  top: 15px; 
 }
 
 #about{
@@ -67,7 +82,8 @@
 
 .links{
   height: 10%; 
-  padding:10px; 
+  padding:15px;
+  transition-delay: 5s; 
 }
 
 .overlay-content{
