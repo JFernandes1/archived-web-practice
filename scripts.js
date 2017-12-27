@@ -21,7 +21,6 @@ $(document).ready(function(){
     $(".links").eq(0).on("click", function(){
         $("section").empty();
         $(".overlay").css('display', 'none');
-        $("section").load("about.html");
     })
     
     $(".links").eq(1).on("click", function(){
