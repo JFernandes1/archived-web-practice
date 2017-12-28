@@ -1,17 +1,49 @@
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
-      
-<img src = "styles/about_2.png" id = "about"/>
-           
-<img src = "styles/headshot.png" id = "headshot"/>
-<p id = "about-para">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type 
-        specimen book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was popularised in
-        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-        and more recently with desktop publishing software like Aldus PageMaker including
-        versions of Lorem Ipsum.
-</p>
-<img src = "styles/pencil.png" id = "pencil">
+<html> 
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
+        <link rel="stylesheet" href="styles/animations.css">
+        <title> Jyo </title>
+    </head>
+
+    <body>
+        <!-- nav -->
+        <div id="myNav" class="overlay">
+                <a href="javascript:void(0)"> <img src = "styles/close.png" class="closebtn" onclick="closeNav()"></a>
+                    <div class="overlay-content" id = "overlay-nav">
+                            <a href="index.html"><img src="styles/home.png" class = "links"></a>
+                            <br>
+                            <a href="about.html"><img src="styles/about-nav.png" class = "links"></a>
+                            <br>
+                            <a href="#"><img src="styles/work-nav.png" class = "links"></a>
+                    </div>
+        </div>
+        <section id = "section">
+                <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
+                <a href = "index.html"><img src="styles/home-icon.png" id = "home-btn" style="cursor:pointer"></a>
+    
+                <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
+                <a href = "index.html"><img src="styles/home-icon.png" id = "home-btn" style="cursor:pointer"></a>
+
+                <link rel="stylesheet" type="text/css" href="styles/styles.css">
+                
+                <img src = "styles/about_2.png" id = "about"/>
+                        
+                <img src = "styles/headshot.png" id = "headshot"/>
+                <p id = "about-para">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type 
+                        specimen book. It has survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged. It was popularised in
+                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.
+                </p>
+                <img src = "styles/pencil.png" id = "pencil">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src= "scripts.js"></script>
+        </section>
+    </body>
+</html>
 

@@ -24,12 +24,13 @@ $(document).ready(function(){
         $(".overlay").css('display', 'none');
         $("#nav").css('display', 'inline');
     })
-
+/*
     $(".links").eq(0).click(function(){
         $("section").empty();
         alert( "Load was performed." );
         $(".overlay").css('display', 'none');
         $("#nav").css('display', 'inline');
+        $("#about-page").css('display', 'inline');
     })
     
     $(".links").eq(1).click(function(){
@@ -37,7 +38,11 @@ $(document).ready(function(){
         $(".overlay").css('display', 'none');
         $("section").load("about.html");
         $("#nav").css('display', 'inline');
-    })
+       
+        $("section").load("about.html");
+
+
+    })*/
     //menu
     $(".links").eq(2).click(function(){
         $("section").empty();
@@ -105,6 +110,17 @@ $(document).ready(function(){
           $("body").removeClass("changeColor")
        }
 
+        });
+
+        $(window).scroll(function() {
+            $('#cake-img').each(function(){
+            var imagePos = $(this).offset().top;
+    
+            var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 40) {
+                    $(this).addClass("slideUp");
+                }
+            });
         });
 
 });
