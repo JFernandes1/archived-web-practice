@@ -1,31 +1,66 @@
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
-<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
-<img src = "styles/projects.png" id = "projects"/>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Barrio|Faster+One|Gravitas+One|Holtwood+One+SC|Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
+  <img src = "styles/projects.png" id = "projects"/>
+  <link rel="stylesheet" href="styles/animations.css">
+  <title> Jyo </title>
+</head>
 
-<div class="main">
-        <!-- Portfolio Gallery Grid -->
-        <div class="row" style="margin-left:6%">
-          <div class="column">
-            <div class="content">
-              <img src="styles/b-tracker.png" style="width:100%">
-              <h3>budget tracker</h3>
-              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei,
-                at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<body>
+<!-- nav -->
+<div id="myNav" class="overlay">
+        <a href="javascript:void(0)"> <img src = "styles/close.png" class="closebtn" onclick="closeNav()"></a>
+            <div class="overlay-content" id = "overlay-nav">
+                    <a href="index.html"><img src="styles/home.png" class = "links"></a>
+                    <br>
+                    <a href="about.html"><img src="styles/about-nav.png" class = "links"></a>
+                    <br>
+                    <a href="#"><img src="styles/work-nav.png" class = "links"></a>
             </div>
-          </div>
-          <div class="column">
-            <div class="content">
-            <img src="styles/cake-icon.png" alt="Lights" style="width:90%">
-              <h3>CAKE WEBSITE</h3>
-              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, 
-                at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-            <img src="styles/graphics.png" alt="Nature" style="width:100%">
-              <h3>graphics with </h3>
-              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei,
-                at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-            </div>
-          </div>
+</div>
+<section id = "section">
+      <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
+      <a href = "index.html"><img src="styles/home-icon.png" id = "home-btn" style="cursor:pointer"></a>
+
+      <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
+      <a href = "index.html"><img src="styles/home-icon.png" id = "home-btn" style="cursor:pointer"></a>
+
+
+  <div class="main">
+    <h1 class = "project-no">1.</h1>
+    <img src="styles/b-tracker.png" class = "project-img">
+    <div class = "project-para">  <h3>budget tracker</h3>
+      <p>This is a user friendly budget tracker, which offers a simple breakdown of spending
+        and expenses. Users can add, delete and modify the values to keep track of their budget
+        and keep an eye on their spending. 
+      </p>
+    </div>
+  <br>
+    <h1 class = "project-no">2.</h1>
+    <a href = "https://jfernandes1.github.io/cake-website-/"><img src="styles/cake-icon.png" class = "project-img"></a>
+    <div class = "project-para"><h3>cake website</h3>
+      <p>A sample info site create for a friend who wanted a website where potential customers
+        could see her previous work and contact her for more info. 
+      </p>
+      </div>
+    <br>
+    <h1 class = "project-no">3.</h1>
+    <img src="styles/graphics.png" class = "project-img">
+    <div class = "project-para">  <h3>graphics using p5.js </h3>
+      <p>Created for a Computer Graphics class, this was my final project.</p>
+    </div>
+  </div>
+</section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src= "scripts.js"></script>
+</html>
+<style>
+  h1{
+    font-family: 'Gravitas One', cursive;
+    font-size: 50px;
+  }
+
+</style>

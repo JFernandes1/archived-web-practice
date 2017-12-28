@@ -60,28 +60,29 @@ body {
   top: 15px; 
 }
 
-#about{
-  margin-left: 30%;
-  height: 73%;
+#about {
+  margin-left: 34%;
+  margin-top: 3%;
+  height: 56%;
 }
 
-#headshot{
-  position: absolute;
-  top: 150%;
-  left: 32.5%;
+#headshot {
+    position: absolute;
+    top: 24%;
+    left: 32.5%;
 }
 
-#pencil{
-  height: 14%;
+#pencil {
+  height: 11%;
 }
 
-#about-para{
+#about-para {
   left: 15%;
   top: 130%;
-  width: 60%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 55px;
   margin-bottom: 0;
 }
 
@@ -152,6 +153,11 @@ font-family: 'Alfa Slab One', cursive;
 font-family: 'Bangers', cursive;
 font-family: 'Bevan', cursive;
 font-family: 'Coustard', serif; */
+h1{
+  font-family: 'Bungee', cursive;
+  font-size: 50px;
+}
+
 
 h3{
   font-family: 'Bungee', cursive;
@@ -181,15 +187,26 @@ p{
 	height: 100%;
 }
 
-#cake-img{
-    border: 10px solid transparent;
-    padding: 15px;
-    -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(border.png) 30 round;
-}
-
 #about-page{
   display: none;
 }
 
+/*portfolio page */
+
+.project-no{
+  margin-left: 12%;
+  display: inline-block;
+  width: 6%;
+}
+
+.project-img{
+  display:inline-block; 
+  width: 20%;
+  margin-right: 4%;
+  vertical-align:middle; 
+}
+
+.project-para{
+  display:inline-block; 
+  width:40%
+}
