@@ -17,7 +17,7 @@ body {
 
 .bg {
   /* The image used */
-  background-image: url("homepage.svg");
+  background-image: url("homepage-o.svg"), url("o.svg");
 
   /* Full height */
   height: 100%; 
@@ -72,7 +72,7 @@ body {
     left: 32.5%;
 }
 
-#pencil {
+#pencil, #pencil-2 {
   height: 11%;
 }
 
@@ -147,6 +147,11 @@ body {
   width: 90%; 
 }
 
+#cake-img:hover {
+  content: url('icon-2-hover.png');
+  width: 100%; 
+}
+
 /*FONTS
 
 font-family: 'Alfa Slab One', cursive;
@@ -209,4 +214,15 @@ p{
 .project-para{
   display:inline-block; 
   width:40%
+}
+
+.path {
+  stroke-dasharray: 100;
+  animation: dash 5s linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
 }

@@ -42,14 +42,6 @@ $(document).ready(function(){
         $("section").load("about.html");
 
 
-    })*/
-    //menu
-    $(".links").eq(2).click(function(){
-        $("section").empty();
-        $(".overlay").css('display', 'none');
-         $("section").load("projects.html");
-         $("#nav").css('display', 'inline');
-       })
 /*
        var wHeight = $(window).innerHeight();
        var siblings = $('.slide').siblings();
