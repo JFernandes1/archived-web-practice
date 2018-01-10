@@ -50,30 +50,7 @@ $(document).ready(function(){
         });
     });
 
-    //about page
-    //$('#britain').addClass('animation').css('display', 'block');
-    /*
-    $( '#britain' ).animate({
-        left: '+=50', // increase by 50
-        opacity: 0.25,
-        fontSize: '12px'
-      },
-      300,
-    function(){
-        alert('he'); 
-    }); 
-    $('#arrow1').addClass('animation').css('display', 'block');*/
-    //$('#britain').css('visibility', 'visible'); 
-
-  // $("#britain").animate({opacity: '1'}, "slow");
-
 });
-
-
-
-// If using jQuery 1.3 or lower, you need to do $(paras[i++] || []) to avoid an "undefined" error
-
-
 
 
 

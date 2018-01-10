@@ -190,6 +190,19 @@ body {
   transition: .5s ease;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: black; 
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white; 
+}
+
+
 /*FONTS
 
 font-family: 'Alfa Slab One', cursive;
@@ -201,10 +214,9 @@ h1{
   font-size: 50px;
 }
 
-
 h3{
   font-family: 'Inconsolata', monospace;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 0;
 }
 
@@ -256,7 +268,8 @@ p{
 }
 
 .text {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  text-transform: lowercase; 
   font-size: 20px;
   width: 100%;
   color: rgb(36, 49, 49); 

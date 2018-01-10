@@ -1,94 +1,99 @@
-<html> 
-    <head>
-            <link href="https://fonts.googleapis.com/css?family=Lekton|Trocchi" rel="stylesheet">
-            <link rel="stylesheet" 
-            href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-        <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Barrio|Faster+One|Gravitas+One|Holtwood+One+SC|Ultra" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-        <link rel="stylesheet" href="styles/animations.css">
-        <title> Jyo </title>
-    </head>
+<html>
 
-    <body>
-        <!-- nav -->
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)"> <img src = "styles/close.png" class="closebtn" onclick="closeNav()"></a>
-                <div class="overlay-content" id = "overlay-nav">
-                        <a href="index.html"><img src="styles/home.png" class = "links"></a>
-                        <br>
-                        <a href="about.html"><img src="styles/about-nav.png" class = "links"></a>
-                        <br>
-                        <a href="projects.html"><img src="styles/work-nav.png" class = "links"></a>
-                </div>
-              </div>
-              <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
-              <a href = "index.html"><img src="styles/home-icon.png" id = "home-btn" style="cursor:pointer"></a>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lekton|Trocchi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Faster+One|Gravitas+One|Holtwood+One+SC|Ultra" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="styles/animations.css">
+    <title> Jyo </title>
+</head>
 
-        
-        <section id = "section">
-            <div class="bg"></div>
-        
+<body>
+    <!-- nav -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)"> <img src="styles/close.png" class="closebtn" onclick="closeNav()"></a>
+        <div class="overlay-content" id="overlay-nav">
+            <a href="index.html"><img src="styles/home.png" class="links"></a>
+            <br>
+            <a href="about.html"><img src="styles/about-nav.png" class="links"></a>
+            <br>
+            <a href="projects.html"><img src="styles/work-nav.png" class="links"></a>
+
+        </div>
+    </div>
+    <img src="styles/nav.png" id="nav" onclick="openNav()" style="cursor:pointer" />
+    <a href="index.html"><img src="styles/home-icon.png" id="home-btn" style="cursor:pointer"></a>
+
+
+    <section id="section">
+        <div class="bg"></div>
+
         <br>
-    
 
-        <div style = "height: 100%">
-       <!-- <img src = "styles/projects.png" id = "projects"/> -->
-        <div id="Container">
+
+        <div style="height: 100%" class="second">
+            <!-- <img src = "styles/projects.png" id = "projects"/> -->
+            <div id="Container">
                 <div class="slide slide1" data-background="rgba(255, 255, 255,1.0)">
-                       
-                    <div class="main-container" style = "margin-top: 150px">
+
+                    <div class="main-container" style="margin-top: 150px">
                         <div class="container-wrap">
-                                <div class="main">
-                                        <img src = "styles/pencil.png" id = "pencil" style = "position:static; bottom:0">
-                                        <h1> favorite projects...</h1>
-                                        <div class="row" style="margin-left:6%">
-                                          <div class="column">
+                            <div class="main">
+                                <img src="styles/pencil.png" id="pencil" style="position:static; bottom:0">
+                                <h1> favorite projects...</h1>
+                                <div class="row" style="margin-left:6%">
+                                    <div class="column">
+                                        <a href="" id="work-list">
                                             <h3>budget tracker</h3>
-                                            <div class="content">
-                                              <img src="styles/icon-1.png" style="width:100%" class="bounce animated" id = "budget-icon">
-                                              <div class="overlay-mini">
-                                              <div class="text">This is a user friendly budget tracker, which offers a simple breakdown of spending
-                                                    and expenses. Users can add, delete and modify the values to keep track of their budget
-                                                    and keep an eye on their spending. 
+                                        </a>
+                                        <div class="content">
+                                            <img src="styles/icon-1.png" style="width:100%" class="bounce animated" id="budget-icon">
+                                            <div class="overlay-mini">
+                                                <div class="text">This is a user friendly budget tracker, which offers a simple breakdown of spending and expenses. Users can add, delete and modify the values to keep track of their budget and keep an eye on their spending.
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="column">
-                                        <h3>cake website</h3>
+                                        <a href="https://jfernandes1.github.io/cake-website-/" id="work-list">
+                                            <h3>cake website</h3>
+                                        </a>
                                         <div class="content">
-                                            <a href = "https://jfernandes1.github.io/cake-website-/"><img src="styles/icon-2.png" style="width:100%" class="image" id = "cake-img"></a>
-                                              <div class="overlay-mini">
-                                              <div class="text">A sample info site create for a friend who wanted a website where potential customers
-                                                    could see her previous work and contact her for more info.</div>
-                                              </div> 
+                                            <img src="styles/icon-2.png" style="width:100%" class="image" id="cake-img">
+                                            <div class="overlay-mini">
+                                                <div class="text">A sample info site create for a friend who wanted a website where potential customers could see her previous work and contact her for more info.</div>
                                             </div>
-                                          </div>
-                                          <div class="column">
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <a href="http://jyofernandes.me/graphics/b-spline/" id="work-list">
                                             <h3>graphics </h3>
-                                            <div class="content">
-                                            <img src="styles/icon-1.png" alt="Nature" style="width:100%" class="image" id = "graphics-icon">                      
-                                              <div class="overlay-mini">
-                                              <div class="text">Created for a Computer Graphics class, this was my final project.</div>
+                                        </a>
+                                        <div class="content">
+                                            <img src="styles/graphics.png" alt="Nature" style="width:100%" class="image" id="graphics-icon">
+                                            <div class="overlay-mini">
+                                                <div class="text">Created for a Computer Graphics class, this was my final project.</div>
                                             </div>
                                         </div>
-                                          </div>
-                                            <img src = "styles/Asset 26.png" class="image" id = "pencil-2" style = "position:static; bottom:0">
-                                          </div>
-                                        </div>
-                                </div>	
-                            </div> 
+                                    </div>
+                                    <img src="styles/Asset 26.png" class="image" id="pencil-2" style="position:static; bottom:0">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-            </section>
-            
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src= "scripts.js"></script>
+        </div>
+    </section>
 
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
 </html>
