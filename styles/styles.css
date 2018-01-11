@@ -1,82 +1,81 @@
-
-
-  body, html {
+body,
+html {
     height: 100%;
     margin: 0;
 }
 
 body {
-  background: rgba(56, 91, 151, 0.1);
-  transition: 0.3s all;
+    background: rgba(56, 91, 151, 0.1);
+    transition: 0.3s all;
 }
 
 .changeColor {
-  background:rgba(42, 62, 96,0.7);
-  transition: 0.8s all;
+    background: rgba(42, 62, 96, 0.7);
+    transition: 0.8s all;
 }
 
 .bg {
-  /* The image used */
-  background-image: url("homepage-o.svg"), url("o.svg");
-
-  -webkit-animation: fade-in 3s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 3s;
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 5; 
+    /* The image used */
+    background-image: url("homepage-o.svg"), url("o.svg");
+    -webkit-animation: fade-in 3s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation: fade-in 3s;
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
 }
 
-.two{
-  height:1000px;
-  
-  font-size:36px;
+.two {
+    height: 1000px;
+    font-size: 36px;
 }
 
-#home-btn{
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  left:20px;
-  top:20px;
-
-  -webkit-animation: fade-in 3s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 3s;
-
-  z-index: 15; 
+#home-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    -webkit-animation: fade-in 3s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation: fade-in 3s;
+    z-index: 15;
 }
 
- #nav {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  right:0;
-  top:0;
-  z-index: 10;
-  -webkit-animation: fade-in 3s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 3s;
+#nav {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    -webkit-animation: fade-in 3s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation: fade-in 3s;
 }
 
-.closebtn{
-  position:absolute; 
-  width: 60px;
-  height: 60px;
-  right: 15px;
-  top: 15px; 
+.closebtn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 15px;
+    top: 15px;
 }
 
 #about {
-  margin-left: 34%;
-  margin-top: 3%;
-  height: 56%;
+    margin-left: 34%;
+    margin-top: 3%;
+    height: 56%;
 }
 
 #headshot {
@@ -86,82 +85,115 @@ body {
 }
 
 #pencil {
-  height: 11%;
+    height: 11%;
 }
 
-#pencil-2{
-  width: 40%; 
+#pencil-2 {
+    width: 40%;
 }
 
 #about-para {
-  left: 15%;
-  top: 130%;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 55px;
-  margin-bottom: 0;
-  z-index: 15; 
+    left: 15%;
+    top: 130%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 0;
+    z-index: 15;
+}
+
+#paper {
+    height: 100%;
+    /* margin-top: 20%; */
+    margin-left: 77%;
+    position: absolute;
+    top: 125%;
+}
+
+#about-p-homepage {
+    position: absolute;
+    width: 60%;
+    left: 7%;
+    top: 169%;
+    font-family: 'Inconsolata', monospace;
+    line-height: 160%;
+    animation: fade-in 5s
+}
+
+#headshot-homepage {
+    height: 40%;
+    position: absolute;
+    top: 140%;
+    left: 22%;
 }
 
 .overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(252,251,192);
-  overflow-y: hidden;
-  transition: 0.5s;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(252, 251, 192);
+    overflow-y: hidden;
+    transition: 0.5s;
 }
 
-.links{
-  height: 10%; 
-  padding:15px;
-  transition-delay: 5s; 
+.links {
+    height: 10%;
+    padding: 15px;
+    transition-delay: 5s;
 }
 
-.overlay-content{
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+.overlay-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
 }
-#projects{
-  margin-left: 40%;
-  margin-right: 50%;
-  margin-top: 5%;
+
+#projects {
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-top: 5%;
 }
+
 
 /* PORTFOLIO PAGE */
+
 .row,
-.row > .column {
+.row>.column {
     padding: 30px;
     padding-top: 10px;
 }
 
+
 /* Create four equal columns that floats next to each other */
+
 .column {
     float: left;
     width: 25%;
 }
 
-/* Clear floats after rows */ 
+
+/* Clear floats after rows */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
+
 /* Content */
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .content {
@@ -170,36 +202,37 @@ body {
 }
 
 #cake-img:hover {
-  content: url('icon-2-hover.png');
-  width: 100%; 
+    content: url('icon-2-hover.png');
+    width: 100%;
 }
 
 .content:hover .overlay-mini {
-  height: 100%;
+    height: 100%;
 }
 
 .overlay-mini {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
 }
 
-a:link, a:visited {
-  text-decoration: none;
-  color: black; 
-  text-align: center;
-  text-decoration: none;
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
-  color: white; 
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -209,134 +242,151 @@ font-family: 'Alfa Slab One', cursive;
 font-family: 'Bangers', cursive;
 font-family: 'Bevan', cursive;
 font-family: 'Coustard', serif; */
-h1{
-  font-family: 'Inconsolata', monospace;
-  font-size: 50px;
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
 }
 
-h3{
-  font-family: 'Inconsolata', monospace;
-  font-size: 30px;
-  margin-bottom: 0;
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    margin-bottom: 0;
 }
 
-p{
-  font-family: 'Inconsolata', monospace;
-  font-size: 1.1em;
-  margin-top: 0;
+p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.1em;
+    margin-top: 0;
 }
 
-
-.slide1{
-  height: 100%;
+.slide1 {
+    height: 100%;
 }
 
-.slide2{
-  height: 100%;
+.slide2 {
+    height: 100%;
 }
 
-.slide3{
-  height: 100%;
+.slide3 {
+    height: 100%;
 }
 
-.slide4{
-	height: 100%;
+.slide4 {
+    height: 100%;
 }
 
-#about-page{
-  display: none;
+#about-page {
+    display: none;
 }
+
 
 /*portfolio page */
 
-.project-no{
-  margin-left: 12%;
-  display: inline-block;
-  width: 6%;
+.project-no {
+    margin-left: 12%;
+    display: inline-block;
+    width: 6%;
 }
 
-.project-img{
-  display:inline-block; 
-  width: 20%;
-  margin-right: 4%;
-  vertical-align:middle; 
+.project-img {
+    display: inline-block;
+    width: 20%;
+    margin-right: 4%;
+    vertical-align: middle;
 }
 
-.project-para{
-  display:inline-block; 
-  width:40%
+.project-para {
+    display: inline-block;
+    width: 40%
 }
 
 .text {
-  font-family: 'Inconsolata', monospace;
-  text-transform: lowercase; 
-  font-size: 20px;
-  width: 100%;
-  color: rgb(36, 49, 49); 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    font-family: 'Inconsolata', monospace;
+    text-transform: lowercase;
+    font-size: 20px;
+    width: 100%;
+    color: rgb(36, 49, 49);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
+
 
 /*---------------------------ABOUT PAGE ---------------------------*/
-#about-img{
-  height: 95%;
-  right: 0%;
-  position: absolute;
-  bottom: 0; 
 
-  -webkit-animation: fade-in 5s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 5s;
+#about-img {
+    height: 95%;
+    right: 0%;
+    position: absolute;
+    bottom: 0;
+    -webkit-animation: fade-in 5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 5s;
+    /* Safari 4.0 - 8.0 */
+    animation: fade-in 5s;
 }
 
-#hi{
-  width: 19%;
-  position: absolute;
-  top: 25%;
-  left: 40%;
-  -webkit-animation: fade-in 3s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 3s;
+#hi {
+    width: 19%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    -webkit-animation: fade-in 3s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 3s;
+    /* Safari 4.0 - 8.0 */
+    animation: fade-in 3s;
 }
 
-
-@keyframes fade-in{
-	from { opacity:0;}
-	to {opacity:1;}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-@-webkit-keyframes fade-in{
-	from {opacity:0;}
-	to {opacity:1;}
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #headshot {
-  position: absolute;
-  width: 15%;
-  top: 10%;
-  left: 25%;
-  z-index: 5;
-  opacity: 0.9; 
-
-  -webkit-animation: fade-in 5s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 5s;
+    position: absolute;
+    width: 15%;
+    top: 10%;
+    left: 25%;
+    z-index: 5;
+    opacity: 0.9;
+    -webkit-animation: fade-in 5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 5s;
+    /* Safari 4.0 - 8.0 */
+    animation: fade-in 5s;
 }
 
-#about-p{
-  position: absolute;
-  width: 66%;
-  left: 7%;
-  top: 41%;
-  font-family: 'Inconsolata', monospace;
-  line-height: 160%; 
-
-  -webkit-animation: fade-in 5s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
-  animation: fade-in 5s;
+#about-p {
+    position: absolute;
+    width: 66%;
+    left: 7%;
+    top: 41%;
+    font-family: 'Inconsolata', monospace;
+    line-height: 160%;
+    -webkit-animation: fade-in 5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 5s;
+    /* Safari 4.0 - 8.0 */
+    animation: fade-in 5s;
 }
 
-  .animated {visibility: visible;}
+.animated {
+    visibility: visible;
+}
