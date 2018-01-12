@@ -345,6 +345,13 @@ p {
     animation: fade-in 5s;
 }
 
+#rubber {
+    height: 25%;
+    position: absolute;
+    top: 150%;
+    right: 20%;
+}
+
 #hi {
     width: 19%;
     position: absolute;
