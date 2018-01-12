@@ -6,9 +6,6 @@
     <!-- or -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barrio|Faster+One|Gravitas+One|Holtwood+One+SC|Ultra" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <link rel="shortcut icon" href="styles/favicon.ico" type="image/x-icon">
@@ -17,7 +14,7 @@
 </head>
 
 <body>
-    <!-- nav -->
+    <!-- NAV BAR -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)"> <img src="styles/close.png" class="closebtn" onclick="closeNav()"></a>
         <div class="overlay-content" id="overlay-nav">
@@ -26,19 +23,18 @@
             <a href="about.html"><img src="styles/about-nav.png" class="links"></a>
             <br>
             <a href="projects.html"><img src="styles/work-nav.png" class="links"></a>
-
         </div>
     </div>
+    <!-- home + nav button -->
     <img src="styles/nav.png" id="nav" onclick="openNav()" style="cursor:pointer" />
     <a href="index.html"><img src="styles/home-icon.png" id="home-btn" style="cursor:pointer"></a>
 
-
+    <!-- *************************************************** HOME PAGE ***************************************************-->
     <section id="section">
         <div class="bg"></div>
-
         <br>
 
-
+        <!-- *************************************************** ABOUT PAGE ***************************************************-->
         <div style="height: 100%" class="second">
             <!-- PAPER BACKGROUND -->
             <img src="styles/paper.png" id="paper">
@@ -46,15 +42,15 @@
             <img src="styles/headshot.png" id="headshot-homepage">
             <div>
                 <div id="about-p-homepage">
-                    <h1>Hi! I'm Jyo.</h1>I'm a senior at NYU studying Computer Science and minoring in French and Web Development.<br> I was born in India, grew up in England (specifically, old York) and moved to New York to attend college. <br> Over the
+                    <h1 style="color:white">Hi! I'm Jyo.</h1>I'm a senior at NYU studying Computer Science and minoring in French and Web Development.<br> I was born in India, grew up in England (specifically, old York) and moved to New York to attend college. <br> Over the
                     summer, I interned on the Digital Marketing team at Mastercard and last semester, I worked at Refinery29 as a Digital Production Intern where I helped create and build custom sites for sponsored partnerships. This semester I will will
-                    be working as an Assistant Product Manager at Constellation Agency. <br> Thanks for taking a looking at my site and a few of my favorite projects that I've worked on. </div>
-
+                    be working as an Assistant Product Manager at Constellation Agency. <br> Thanks for taking a looking at my site. Below are a few of my favorite projects that I've worked on. </div>
                 </p>
             </div>
         </div>
+        </div>
 
-        <!-- <img src = "styles/projects.png" id = "projects"/> -->
+        <!-- *************************************************** PROJECTS PAGE ***************************************************-->
         <div id="Container">
             <div class="slide slide1" data-background="rgba(255, 255, 255,1.0)">
 
@@ -62,14 +58,14 @@
                     <div class="container-wrap">
                         <div class="main">
                             <img src="styles/pencil.png" id="pencil" style="position:static; bottom:0">
-                            <h1> favorite projects...</h1>
+                            <h1 id="projects-header"> favorite projects...</h1>
                             <div class="row" style="margin-left:6%">
                                 <div class="column">
                                     <a href="http://linserv1.cims.nyu.edu:13362/" id="work-list">
                                         <h3>budget tracker</h3>
                                     </a>
                                     <div class="content">
-                                        <img src="styles/icon-1.png" style="width:100%" class="bounce animated" id="budget-icon">
+                                        <img src="styles/icon-1.png" style="width:100%" id="budget-icon">
                                         <div class="overlay-mini">
                                             <div class="text">This is a user friendly budget tracker, which offers a simple breakdown of spending and expenses. Users can add, delete and modify the values to keep track of their budget and keep an eye on their spending.
                                             </div>

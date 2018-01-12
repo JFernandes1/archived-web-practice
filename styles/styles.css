@@ -106,7 +106,7 @@ body {
 #paper {
     height: 100%;
     /* margin-top: 20%; */
-    margin-left: 77%;
+    right: 0%;
     position: absolute;
     top: 125%;
 }
@@ -117,7 +117,9 @@ body {
     left: 7%;
     top: 169%;
     font-family: 'Inconsolata', monospace;
-    line-height: 160%;
+    line-height: 173%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
     animation: fade-in 5s
 }
 
@@ -126,6 +128,7 @@ body {
     position: absolute;
     top: 140%;
     left: 22%;
+    display: none;
 }
 
 .overlay {
@@ -163,6 +166,14 @@ body {
 
 
 /* PORTFOLIO PAGE */
+
+#projects-header {
+    display: none;
+}
+
+.row {
+    display: none;
+}
 
 .row,
 .row>.column {
@@ -294,6 +305,11 @@ p {
     width: 20%;
     margin-right: 4%;
     vertical-align: middle;
+}
+
+#budget-icon,
+#graphics-icon {
+    border: #e6e6e6 solid 2px;
 }
 
 .project-para {

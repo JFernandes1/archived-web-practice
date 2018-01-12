@@ -36,24 +36,29 @@ $(document).ready(function() {
             $("body").removeClass("changeColor")
         }
         if (scrollPercent > 20) {
-            $("#pencil").addClass("animated slideLeft");
-            $("#headshot-homepage").addClass("animated fadeIn");
-            console.log("reached 20");
+            $("#pencil").fadeIn();
+            // $("#headshot-homepage").addClass("animated fadeIn");
+            $("#headshot-homepage").fadeIn(2000);
         }
-        if (scrollPercent > 75) {
+        if (scrollPercent > 80) {
             $("body").removeClass("changeColor")
         }
+
+        if (scrollPercent > 75) {
+            $("#projects-header").fadeIn(1500);
+            $(".row").fadeIn(2200);
+        }
     });
 
-    $(window).scroll(function() {
-        $('#cake-img').each(function() {
-            var imagePos = $(this).offset().top;
+    /*  $(window).scroll(function() {
+          $('#cake-img').each(function() {
+              var imagePos = $(this).offset().top;
 
-            var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow + 40) {
-                $(this).addClass("animated fadeIn");
-            }
-        });
-    });
+              var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow + 40) {
+                  $(this).addClass("animated fadeIn");
+              }
+          });
+      }); */
 
 });
