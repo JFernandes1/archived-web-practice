@@ -1,60 +1,85 @@
 <html>
+
 <head>
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Barrio|Faster+One|Gravitas+One|Holtwood+One+SC|Ultra" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-  <img src = "styles/projects.png" id = "projects"/>
-  <link rel="stylesheet" href="styles/animations.css">
-  <title> Jyo </title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Faster+One|Gravitas+One|Holtwood+One+SC|Ultra" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Bevan|Bungee|Coustard" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <img src="styles/projects.png" id="projects" />
+    <link rel="stylesheet" href="styles/animations.css">
+    <title> Jyo </title>
 </head>
 
 <body>
-<!-- nav -->
-<div id="myNav" class="overlay">
-        <a href="javascript:void(0)"> <img src = "styles/close.png" class="closebtn" onclick="closeNav()"></a>
-            <div class="overlay-content" id = "overlay-nav">
-                    <a href="index.html"><img src="styles/home.png" class = "links"></a>
-                    <br>
-                    <a href="about.html"><img src="styles/about-nav.png" class = "links"></a>
-                    <br>
-                    <a href="#"><img src="styles/work-nav.png" class = "links"></a>
+    <!-- nav -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)"> <img src="styles/close.png" class="closebtn" onclick="closeNav()"></a>
+        <div class="overlay-content" id="overlay-nav">
+            <a href="index.html"><img src="styles/home.png" class="links"></a>
+            <br>
+            <a href="about.html"><img src="styles/about-nav.png" class="links"></a>
+            <br>
+            <a href="#"><img src="styles/work-nav.png" class="links"></a>
+        </div>
+    </div>
+    <section id="section">
+        <img src="styles/nav.png" id="nav" onclick="openNav()" style="cursor:pointer" />
+        <a href="index.html"><img src="styles/home-icon.png" id="home-btn" style="cursor:pointer"></a>
+
+        <img src="styles/nav.png" id="nav" onclick="openNav()" style="cursor:pointer" />
+        <a href="index.html"><img src="styles/home-icon.png" id="home-btn" style="cursor:pointer"></a>
+
+        <div id="Container">
+            <div class="slide slide1" data-background="rgba(255, 255, 255,1.0)">
+
+                <div class="main-container" style="margin-top: 150px">
+                    <div class="container-wrap">
+                        <div class="project-page">
+                            <img src="styles/pencil.png" id="pencil" style="position:static; bottom:0">
+                            <h1 id="projects-header"> favorite projects...</h1>
+                            <div class="row" style="margin-left:6%">
+                                <div class="column">
+                                    <a href="http://linserv1.cims.nyu.edu:13362/" id="work-list">
+                                        <h3>budget tracker</h3>
+                                    </a>
+                                    <div class="content">
+                                        <img src="styles/icon-1.png" style="width:100%" id="budget-icon">
+                                        <div class="overlay-mini">
+                                            <div class="text">This is a user friendly budget tracker, which offers a simple breakdown of spending and expenses. Users can add, delete and modify the values to keep track of their budget and keep an eye on their spending.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <a href="https://jfernandes1.github.io/cake-website-/" id="work-list">
+                                        <h3>cake website</h3>
+                                    </a>
+                                    <div class="content">
+                                        <img src="styles/icon-2.png" style="width:100%" class="image" id="cake-img">
+                                        <div class="overlay-mini">
+                                            <div class="text">A sample info site create for a friend who wanted a website where potential customers could see her previous work and contact her for more info.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <a href="http://jyofernandes.me/graphics/b-spline/" id="work-list">
+                                        <h3>graphics </h3>
+                                    </a>
+                                    <div class="content">
+                                        <img src="styles/graphics.png" alt="Nature" style="width:100%" class="image" id="graphics-icon">
+                                        <div class="overlay-mini">
+                                            <div class="text">Created for a Computer Graphics class, this was my final project.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="styles/Asset 26.png" class="image" id="pencil-2" style="position:static; bottom:0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-</div>
-<section id = "section">
-      <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
-      <a href = "index.html"><img src="styles/home-icon.png" id = "home-btn" style="cursor:pointer"></a>
+        </div>
+        </div>
+        </div>
 
-      <img src="styles/nav.png" id = "nav"onclick="openNav()"style="cursor:pointer"/>
-      <a href = "index.html"><img src="styles/home-icon.png" id = "home-btn" style="cursor:pointer"></a>
-
-
-  <div class="main">
-    <h1 class = "project-no">1.</h1>
-    <img src="styles/b-tracker.png" class = "project-img">
-    <div class = "project-para">  <h3>budget tracker</h3>
-      <p>This is a user friendly budget tracker, which offers a simple breakdown of spending
-        and expenses. Users can add, delete and modify the values to keep track of their budget
-        and keep an eye on their spending. 
-      </p>
-    </div>
-  <br>
-    <h1 class = "project-no">2.</h1>
-    <a href = "https://jfernandes1.github.io/cake-website-/"><img src="styles/cake-icon.png" class = "project-img"></a>
-    <div class = "project-para"><h3>cake website</h3>
-      <p>A sample info site create for a friend who wanted a website where potential customers
-        could see her previous work and contact her for more info. 
-      </p>
-      </div>
-    <br>
-    <h1 class = "project-no">3.</h1>
-    <img src="styles/graphics.png" class = "project-img">
-    <div class = "project-para">  <h3>graphics using p5.js </h3>
-      <p>Created for a Computer Graphics class, this was my final project.</p>
-    </div>
-  </div>
-</section>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script src= "scripts.js"></script>
 </html>

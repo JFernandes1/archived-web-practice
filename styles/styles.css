@@ -85,7 +85,7 @@ body {
 }
 
 #pencil {
-    height: 11%;
+    height: 11.5%;
 }
 
 #pencil-2 {
@@ -348,8 +348,15 @@ p {
 #rubber {
     height: 25%;
     position: absolute;
-    top: 150%;
-    right: 20%;
+    top: 125%;
+    left: 1%;
+}
+
+#email {
+    width: 20%;
+    position: absolute;
+    top: 196%;
+    right: 1%;
 }
 
 #hi {
